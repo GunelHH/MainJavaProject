@@ -31,6 +31,8 @@ public class Main {
                 new Student(2L,"Kheyransa",27),
                 new Student(3L,"Gunel",21),
         };
+        System.out.println(Arrays.toString(students));
+        System.out.println("=========");
         Arrays.sort(students);
         System.out.println(Arrays.toString(students));
         System.out.println("======================= by name desc");
