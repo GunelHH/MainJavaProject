@@ -11,22 +11,7 @@ insert into loan (bookid, readerid, loandate, returndate)
 values (3,3,'2019-12-5','2020-08-15');
 
 --4 Query for returning a book from a reader.
-insert into loan (bookid, readerid, returndate)
-values (4,1,'2024-03-12');
-
---orr
-
-SELECT returndate
-FROM loan
-WHERE id=2;
-
---orr
-UPDATE loan
-SET returndate = CURRENT_DATE
-WHERE bookid = 3
-  AND readerid =4
-  AND loan.returndate IS NULL;
-
+DELETE FROM loan WHERE returndate='2020-08-15';
 
 --5 Query for searching books based on various criteria.
 SELECT * from book
